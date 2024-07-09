@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#products {
+  height: fit-content;
+  margin-bottom: 1rem;
+}
+#products ul {
+  display: flex;
+  justify-content: flex-start;
+}
+#products ul li {
+  margin-right: 2rem;
+  font-family: "Source Code Pro";
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  text-decoration: uppercase;
+}
+#products ul li:hover {
+  color: #4d73f8;
+}
+.inactive {
+  color: #616161;
+}
+.active {
+  color: #4d73f8;
+}
+.nav-tab {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 4rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+.products-grid {
+  margin: 0 auto;
+  background-color: #fafafa;
+  padding: 0.5rem 4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.2rem;
+}
+.single-product {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 340px;
+  width: 310px;
+}
+.cart-icon {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+.product-img {
+  width: 100%;
+  height: 65%;
+  object-fit: cover;
+}
+.product-details {
+  background-color: #c1d3e5;
+  height: 35%;
+  padding: 0 1.5rem 0 1.5rem;
+}
+.product-details h3 {
+  color: rgba(0, 0, 0, 0.75);
+  font-family: Lora;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+  margin-bottom: 0.1rem;
+}
+.desc {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 125%; /* 15px */
+}
+.cart-btn {
+  display: flex;
+  height: 32px;
+  padding: 0px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #4d73f8;
+  background-color: #fff;
+  color: #4d73f8;
+  font-family: "Source Code Pro", monospace;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  cursor: pointer;
+}
+.cart-btn:hover {
+  background-color: #4d73f8;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+.view-more {
+  background-color: #fafafa;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem 6.5rem;
+}
+.view-more button {
+  border-radius: 4px;
+  background: #225ae9;
+  color: var(--Schemes-On-Primary, #fff);
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+}

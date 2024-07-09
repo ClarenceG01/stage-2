@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+nav {
+  background-color: #efefef;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+a {
+  text-decoration: none;
+  color: #616161;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+ul li {
+  list-style-type: none;
+  margin-right: 1.75rem;
+  font-family: "Source Code Pro", monospace;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  cursor: pointer;
+}
+
+ul li:hover {
+  color: #4d73f8;
+}
+.nav-btn {
+  display: flex;
+  height: 32px;
+  padding: 0px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #4d73f8;
+  color: #4d73f8;
+  font-family: "Source Code Pro", monospace;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  cursor: pointer;
+}
+.nav-btn:hover {
+  background-color: #4d73f8;
+  color: #efefef;
+  transition: 0.3s ease-in-out;
+}
+/* .cart { */
+/* position: relative; */
+/* } */
+/* .cart-icon { */
+/* font-size: 1.5rem; */
+/* color: #616161; */
+/* cursor: pointer; */
+/* } */
+/* .cart span { */
+/* position: absolute; */
+/* top: -17px; */
+/* right: -10px; */
+/* background-color: #4d73f8; */
+/* color: #fff; */
+/* border-radius: 50%; */
+/* padding: 0.2rem 0.5rem; */
+/* font-size: 0.8rem; */
+/* } */

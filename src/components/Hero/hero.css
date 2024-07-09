@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#hero {
+  background-color: #efefef;
+  height: 91.5vh;
+  padding: 2rem;
+  display: flex;
+}
+#hero img {
+}
