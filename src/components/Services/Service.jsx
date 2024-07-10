@@ -10,22 +10,19 @@ const Service = () => {
           <div className="services-contacts">
             <h2>Consult A Doctor</h2>
             <div className="doc-contact">
-              <img src="../../../public/assets/mdi-light_email.png" alt="" />
+              <img src="/assets/mdi-light_email.png" alt="" />
               <p>deanna.curtis@example.com</p>
             </div>
             <div className="doc-contact">
-              <img src="../../../public/assets/solar_phone-linear.png" alt="" />
+              <img src="/assets/solar_phone-linear.png" alt="" />
               <p>(219) 555-0114</p>
             </div>
             <div className="doc-contact">
-              <img src="../../../public/assets/carbon_link.png" alt="" />
+              <img src="/assets/carbon_link.png" alt="" />
               <p>http://www.statholdings.com</p>
             </div>
           </div>
-          <img
-            src="../../../public/assets/Image.png"
-            alt="Smiling doctor image"
-          />
+          <img src="/assets/Image.png" alt="Smiling doctor image" />
         </div>
       </div>
     </div>

@@ -9,22 +9,19 @@ const Contact = () => {
       <div className="main-contacts">
         <div className="words-contacts">
           <div className="single-contact">
-            <img src="../../../public/assets/carbon_time.png" alt="" />
+            <img src="/assets/carbon_time.png" alt="" />
             <p>Open Mon-Fri 8AM-8PM, Sat 9AM-6PM, Sun 10AM-4PM</p>
           </div>
           <div className="single-contact">
-            <img src="../../../public/assets/mdi_location.png" alt="" />
+            <img src="/assets/mdi_location.png" alt="" />
             <p>123 Main Street, Anytown, USA 12345</p>
           </div>
           <div className="single-contact">
-            <img
-              src="../../../public/assets/solar_phone-linear (1).png"
-              alt=""
-            />
+            <img src="/assets/solar_phone-linear (1).png" alt="" />
             <p>Phone: (555) 123-4567</p>
           </div>
           <div className="single-contact">
-            <img src="../../../public/assets/mdi-light_email.png" alt="" />
+            <img src="/assets/mdi-light_email.png" alt="" />
             <p>Email: care@vitarx.com</p>
           </div>
         </div>

@@ -4,7 +4,7 @@ import "./products.css";
 import { useDispatch } from "react-redux";
 import { changeSeeCart } from "../../redux/productsSlice";
 import ProductCard from "../../UI/ProductCard";
-import cartIcon from "../../../public/assets/mdi_cart.png";
+import cartIcon from "/assets/mdi_cart.png";
 
 const Products = () => {
   const [category, setCategory] = useState("featured");

@@ -52,7 +52,7 @@
   height: 450px;
   flex-shrink: 0;
   border-radius: 50%;
-  background: url("../../../public/assets/ellipse.png");
+  background: url("/assets/ellipse.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
