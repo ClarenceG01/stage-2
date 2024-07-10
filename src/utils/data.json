@@ -5,35 +5,35 @@
       "name": "Full Motion",
       "description": "Supports joint health and flexibility.",
       "price": "$265.99",
-      "image": "../../assets/Logo.png"
+      "image": "../../../public/assets/1.png"
     },
     {
       "id": 2,
       "name": "Cal-Mag",
       "description": "Provides essential calcium and magnesium.",
       "price": "$265.99",
-      "image": "../../assets/2.png"
+      "image": "../../../public/assets/2.png"
     },
     {
       "id": 3,
       "name": "Omega-3",
       "description": "Promotes heart and brain health.",
       "price": "$265.99",
-      "image": "../../assets/3.png"
+      "image": "../../../public/assets/3.png"
     },
     {
       "id": 4,
       "name": "Vitality Plus",
       "description": "Boosts overall vitality and energy.",
       "price": "$265.99",
-      "image": "../../assets/4.png"
+      "image": "../../../public/assets/4.png"
     },
     {
       "id": 5,
       "name": "Full Motion",
       "description": "Supports joint health and flexibility.",
       "price": "$265.99",
-      "image": "../../assets/1.png"
+      "image": "../../../public/assets/1.png"
     },
     {
       "id": 6,
@@ -63,28 +63,28 @@
       "name": "Probiotic Complex",
       "description": "Supports digestive health.",
       "price": "$199.99",
-      "image": "../assets/meds.png"
+      "image": "../../../public/assets/1.png"
     },
     {
       "id": 6,
       "name": "Immune Support",
       "description": "Enhances immune function.",
       "price": "$249.99",
-      "image": "../assets/meds.png"
+      "image": "../../../public/assets/2.png"
     },
     {
       "id": 7,
       "name": "Vitamin D3",
       "description": "Essential for bone health.",
       "price": "$159.99",
-      "image": "../assets/meds.png"
+      "image": "../../../public/assets/3.png"
     },
     {
       "id": 8,
       "name": "B-Complex",
       "description": "Supports energy metabolism.",
       "price": "$189.99",
-      "image": "../assets/meds.png"
+      "image": "../../../public/assets/4.png"
     }
   ],
   "special": [
@@ -93,28 +93,28 @@
       "name": "Antioxidant Formula",
       "description": "Protects against free radicals.",
       "price": "$279.99",
-      "image": "../assets/meds.png"
+      "image": "../../../public/assets/1.png"
     },
     {
       "id": 10,
       "name": "Herbal Blend",
       "description": "Promotes overall wellness.",
       "price": "$299.99",
-      "image": "../assets/meds.png"
+      "image": "../../../public/assets/2.png"
     },
     {
       "id": 11,
       "name": "Collagen Booster",
       "description": "Supports skin health.",
       "price": "$225.99",
-      "image": "../assets/meds.png"
+      "image": "../../../public/assets/3.png"
     },
     {
       "id": 12,
       "name": "Sleep Aid",
       "description": "Promotes restful sleep.",
       "price": "$205.99",
-      "image": "../assets/meds.png"
+      "image": "../../../public/assets/4.png"
     }
   ]
 }

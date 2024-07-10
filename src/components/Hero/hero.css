@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -6,8 +7,68 @@
 #hero {
   background-color: #efefef;
   height: 91.5vh;
-  padding: 2rem;
+  padding: 2rem 2rem 2rem 4rem;
   display: flex;
+  justify-content: center;
+  gap: 5rem;
 }
-#hero img {
+#hero div:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  flex-shrink: 0;
+}
+#hero div h1 {
+  width: 600px;
+  color: #020c18;
+  font-family: Poppins;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%;
+  letter-spacing: 2.2px;
+}
+#hero div p {
+  color: #616161;
+  font-family: "Source Code Pro";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0.36px;
+}
+#hero div button {
+  display: flex;
+  width: 200px;
+  height: 56px;
+  padding: 5px 32px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  background: #225ae9;
+  color: var(--Schemes-On-Primary, #fff);
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  cursor: pointer;
+}
+#hero div button:hover {
+  background: #fafafa;
+  color: #225ae9;
+  border: 1px solid #225ae9;
+}
+.hero-img {
+  height: 80vh;
+}
+.hero-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

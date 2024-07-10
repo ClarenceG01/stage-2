@@ -1,7 +1,7 @@
 import React from "react";
 import "./cart.css";
 import { useDispatch, useSelector } from "react-redux";
-import close from "../../assets/x.jpg";
+import close from "../../../public/assets/x.jpg";
 import { changeSeeCart } from "../../redux/productsSlice";
 
 const Cart = () => {

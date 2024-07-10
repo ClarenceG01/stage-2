@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+#contact {
+  height: fit-content;
+  min-height: 75vh;
+  background-color: #225ae9;
+  padding: 1.5rem 4rem 1.5rem 4rem;
+}
+#contact h2 {
+  color: var(--Schemes-On-Primary, #fff);
+  font-family: Lora;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%;
+  width: 703px;
+}
+.main-contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  padding: 0 5rem;
+  height: 450px;
+}
+.words-contacts {
+  height: 75%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.single-contact {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+.single-contact img {
+  width: 50px;
+  height: 50px;
+  margin-right: 30px;
+}
+.single-contact p {
+  color: var(--Schemes-On-Primary, #fff);
+  font-family: Lora;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%; /* 20px */
+}
+.contact-img {
+  width: 653px;
+  height: 450px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: url("../../../public/assets/ellipse.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

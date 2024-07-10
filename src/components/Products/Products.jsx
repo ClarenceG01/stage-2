@@ -4,7 +4,7 @@ import "./products.css";
 import { useDispatch } from "react-redux";
 import { changeSeeCart } from "../../redux/productsSlice";
 import ProductCard from "../../UI/ProductCard";
-import cartIcon from "../../assets/mdi_cart.png";
+import cartIcon from "../../../public/assets/mdi_cart.png";
 
 const Products = () => {
   const [category, setCategory] = useState("featured");
@@ -41,7 +41,9 @@ const Products = () => {
           return (
             <ProductCard className="single-product" key={product.id}>
               <img className="cart-icon" src={cartIcon} alt="cart icon" />
-              <img className="product-img" src="../../assets/Logo.png" alt="" />
+              <div className="product-img">
+                <img src={product.image} alt="" />
+              </div>
               <div className="product-details">
                 <h3>{product.name}</h3>
                 <p className="desc">{product.description}</p>
