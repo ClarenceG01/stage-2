@@ -50,6 +50,9 @@ ul li:hover {
   color: #efefef;
   transition: 0.3s ease-in-out;
 }
+.burger {
+  display: none;
+}
 /* .cart { */
 /* position: relative; */
 /* } */
@@ -68,3 +71,15 @@ ul li:hover {
 /* padding: 0.2rem 0.5rem; */
 /* font-size: 0.8rem; */
 /* } */
+@media only screen and (max-width: 420px) {
+  ul {
+    display: none;
+  }
+  nav a {
+    display: none;
+  }
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+}

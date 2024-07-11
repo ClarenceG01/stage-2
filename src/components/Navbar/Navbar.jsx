@@ -23,6 +23,7 @@ const Navbar = () => {
       <a href="#products">
         <button className="nav-btn">Shop Now</button>
       </a>
+      <img className="burger" src="/assets/marketeq_menu.png" alt="" />
     </nav>
   );
 };
