@@ -60,3 +60,58 @@
   justify-content: center;
   align-items: center;
 }
+@media only screen and (max-width: 768px) {
+  #contact {
+    width: 100vw;
+    padding: 1rem 0;
+  }
+  #contact h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+  }
+  .main-contacts {
+    flex-direction: column-reverse;
+    height: fit-content;
+    padding: 1rem;
+  }
+  .contact-img {
+    width: 500px;
+    height: 300px;
+    margin: 2rem 0;
+  }
+  .words-contacts {
+    width: 80%;
+    height: fit-content;
+  }
+  .single-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 420px) {
+  #contact {
+    margin: 0;
+    padding: 1rem 0;
+    width: 100vw;
+  }
+  #contact h2 {
+    font-size: 20px;
+  }
+  .main-contacts {
+    padding: 1rem;
+  }
+  .contact-img {
+    width: 300px;
+    height: 200px;
+  }
+  .single-contact img {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+  }
+  .single-contact p {
+    font-size: 14px;
+  }
+}

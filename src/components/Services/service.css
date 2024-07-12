@@ -62,3 +62,58 @@
   font-weight: 500;
   line-height: 100%;
 }
+@media only screen and (max-width: 768px) {
+  #services h1 {
+    margin-left: 2rem;
+  }
+  .main-services {
+    padding: 0 2rem;
+  }
+  .main-services h2 {
+    font-size: 24px;
+    margin-bottom: 35px;
+  }
+  .services-contacts {
+    padding: 2rem 1rem;
+  }
+  .doc-contact {
+    width: 100%;
+  }
+  .doc-contact img {
+    width: 32px;
+    height: 32px;
+  }
+  .doc-contact p {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  #services {
+    width: 100vw;
+  }
+  #services h1 {
+    text-align: center;
+  }
+  .main-services {
+    padding: 0 1rem;
+  }
+  .details {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .details img {
+    margin-right: 10px;
+  }
+  .services-contacts {
+    width: 100%;
+  }
+  .services-contacts h2 {
+    text-align: center;
+  }
+  .smiling-doc {
+    width: 100%;
+    max-width: 300px;
+    order: 2;
+    margin: 20px 0;
+  }
+}

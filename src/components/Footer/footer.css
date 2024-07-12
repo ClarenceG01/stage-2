@@ -47,3 +47,40 @@
 #footer div:last-child p:first-child {
   margin-right: 1.5rem;
 }
+@media only screen and (max-width: 768px) {
+  #footer {
+    width: 90%;
+  }
+  #footer div:first-child img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  #footer div:first-child p {
+    font-size: 14px;
+  }
+  #footer div:nth-child(2) > img {
+    margin-right: 7px;
+  }
+  #footer div:last-child p {
+    font-size: 14px;
+  }
+  #footer div:last-child p:first-child {
+    margin-right: 10px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  #footer {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem 0;
+  }
+  #footer div:first-child {
+    margin-bottom: 1rem;
+    margin-right: 1.5rem;
+  }
+  #footer div:nth-child(2) {
+    margin-bottom: 1rem;
+  }
+}

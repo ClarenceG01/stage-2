@@ -22,7 +22,11 @@ const Service = () => {
               <p>http://www.statholdings.com</p>
             </div>
           </div>
-          <img src="/assets/Image.png" alt="Smiling doctor image" />
+          <img
+            className="smiling-doc"
+            src="/assets/Image.png"
+            alt="Smiling doctor image"
+          />
         </div>
       </div>
     </div>

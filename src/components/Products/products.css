@@ -153,9 +153,16 @@
   color: #225ae9;
   border: 1px solid #225ae9;
 }
+@media only screen and (max-width: 768px) {
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1rem 0;
+  }
+}
 @media only screen and (max-width: 420px) {
   #products {
-    width: 100vh;
+    width: 100vw;
   }
   .nav-tab {
     padding: 1rem;
@@ -177,7 +184,9 @@
     padding: 1rem 0;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 1.2rem;
-    /* center */
+    gap: 3rem;
+  }
+  .single-product {
+    margin: 0 auto;
   }
 }
