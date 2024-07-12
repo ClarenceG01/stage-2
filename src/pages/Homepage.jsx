@@ -9,7 +9,7 @@ import Contact from "../components/Contacts/Contact";
 
 const Homepage = () => {
   return (
-    <>
+    <div className="homepage">
       <Navbar />
       <Hero />
       <Products />
@@ -17,7 +17,7 @@ const Homepage = () => {
       <Reviews />
       <Contact />
       <Cart />
-    </>
+    </div>
   );
 };
 

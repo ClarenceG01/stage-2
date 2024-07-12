@@ -90,6 +90,8 @@
 @media only screen and (max-width: 420px) {
   #services {
     width: 100vw;
+    margin-right: 0;
+    margin-left: 0;
   }
   #services h1 {
     text-align: center;
