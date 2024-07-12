@@ -62,7 +62,7 @@
   font-weight: 500;
   line-height: 100%;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   #services h1 {
     margin-left: 2rem;
   }
@@ -87,7 +87,7 @@
     font-size: 20px;
   }
 }
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 768px) {
   #services {
     width: 100vw;
     margin-right: 0;

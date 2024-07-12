@@ -153,14 +153,14 @@
   color: #225ae9;
   border: 1px solid #225ae9;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .products-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 1rem 0;
   }
 }
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 768px) {
   #products {
     width: 100vw;
   }
