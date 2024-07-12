@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import products from "../../utils/data.json";
 import "./products.css";
 import { useDispatch } from "react-redux";
-import { changeSeeCart } from "../../redux/productsSlice";
+import { addProductToCart, changeSeeCart } from "../../redux/productsSlice";
 import ProductCard from "../../UI/ProductCard";
 import cartIcon from "/assets/mdi_cart.png";
 
@@ -40,7 +40,15 @@ const Products = () => {
         {products[category].map((product) => {
           return (
             <ProductCard className="single-product" key={product.id}>
-              <img className="cart-icon" src={cartIcon} alt="cart icon" />
+              <img
+                className="cart-icon"
+                src={cartIcon}
+                alt="cart icon"
+                onClick={() => {
+                  dispatch(addProductToCart({ ...product, quantity: 1 }));
+                  console.log("Product added to cart");
+                }}
+              />
               <div className="product-img">
                 <img src={product.image} alt="" />
               </div>

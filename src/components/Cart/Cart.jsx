@@ -2,13 +2,21 @@ import React from "react";
 import "./cart.css";
 import { useDispatch, useSelector } from "react-redux";
 import close from "/assets/x.jpg";
-import { changeSeeCart } from "../../redux/productsSlice";
+import {
+  changeSeeCart,
+  addQuantity,
+  reduceQuantity,
+} from "../../redux/productsSlice";
 import { useNavigate } from "react-router-dom";
 
 const Cart = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const visible = useSelector((state) => state.products.setCart);
+  const cartItems = useSelector((state) => state.products.cart);
+  const totalPrice = cartItems.reduce((total, product) => {
+    return total + product.price * product.quantity;
+  }, 0);
   return (
     <div className={visible ? "cart-container" : "no-cart"}>
       <div className="top">
@@ -16,25 +24,42 @@ const Cart = () => {
         <h3>Cart</h3>
       </div>
       <div className="cart-products">
-        <div className="cart-product">
-          <div className="cart-img">
-            <img src="/assets/1.png" alt="" />
-          </div>
-          <div className="product-info">
-            <h3>Product Name</h3>
-            <div class="number-input">
-              <button className="decrease">-</button>
-              <div>1</div>
-              <button className="increase">+</button>
+        {cartItems.map((product) => {
+          return (
+            <div className="cart-product" key={product.id}>
+              <div className="cart-img">
+                <img src={product.image} alt="" />
+              </div>
+              <div className="product-info">
+                <div>
+                  <h3>{product.name}</h3>
+                  <div class="number-input">
+                    <button
+                      className="decrease"
+                      disabled={product.quantity === 1 ? true : false}
+                      onClick={() => dispatch(reduceQuantity(product))}
+                    >
+                      -
+                    </button>
+                    <div>{product.quantity}</div>
+                    <button
+                      className="increase"
+                      onClick={() => dispatch(addQuantity(product))}
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+                <p>${(product.price * product.quantity).toFixed(2)}</p>
+              </div>
             </div>
-          </div>
-          <p>$19.99</p>
-        </div>
+          );
+        })}
       </div>
       <div className="cart-checkout">
         <div className="total-price">
           <p>Cart total</p>
-          <p>$165.97</p>
+          <p>${totalPrice.toFixed(2)}</p>
         </div>
         <button onClick={() => navigate("/checkout")}>Checkout</button>
       </div>
