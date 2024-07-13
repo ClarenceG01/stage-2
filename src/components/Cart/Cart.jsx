@@ -6,8 +6,11 @@ import {
   changeSeeCart,
   addQuantity,
   reduceQuantity,
+  removeProduct,
+  clearCart,
 } from "../../redux/productsSlice";
 import { useNavigate } from "react-router-dom";
+import { RiDeleteBin6Line } from "react-icons/ri";
 
 const Cart = () => {
   const navigate = useNavigate();
@@ -53,12 +56,28 @@ const Cart = () => {
                     </button>
                   </div>
                 </div>
-                <p>
-                  $
-                  {(product.current_price[0].USD[0] * product.quantity).toFixed(
-                    2
-                  )}
-                </p>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                  }}
+                >
+                  <p>
+                    $
+                    {(
+                      product.current_price[0].USD[0] * product.quantity
+                    ).toFixed(2)}
+                  </p>
+                  <RiDeleteBin6Line
+                    style={{
+                      cursor: "pointer",
+                      fontSize: "1.3rem",
+                      color: "red",
+                    }}
+                    onClick={() => dispatch(removeProduct(product))}
+                  />
+                </div>
               </div>
             </div>
           );
@@ -71,6 +90,15 @@ const Cart = () => {
         </div>
         <button onClick={() => navigate("/checkout")}>Checkout</button>
       </div>
+      <button
+        style={{
+          display: cartItems.length === 0 ? "none" : "block",
+        }}
+        className="clear-btn"
+        onClick={() => dispatch(clearCart())}
+      >
+        Clear cart
+      </button>
     </div>
   );
 };

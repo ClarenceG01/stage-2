@@ -90,6 +90,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: 125%; /* 17.5px */
+  margin-bottom: 1rem;
 }
 .number-input {
   margin-top: 0.5rem;
@@ -163,4 +164,22 @@
   font-weight: 500;
   line-height: 20px;
   cursor: pointer;
+}
+.clear-btn {
+  color: var(--Schemes-On-Primary, #fff);
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  width: 80%;
+  padding: 0.5rem;
+  background: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 5px;
 }

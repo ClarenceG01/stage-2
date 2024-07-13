@@ -34,13 +34,27 @@ const productsSlice = createSlice({
 
       product.quantity--;
     },
+    removeProduct: (state, action) => {
+      const { id } = action.payload;
+      const newCart = state.cart.filter((product) => product.id !== id);
+      state.cart = newCart;
+    },
+    clearCart: (state, action) => {
+      state.cart = [];
+    },
     changeSeeCart: (state) => {
       state.setCart = !state.setCart;
     },
   },
 });
 
-export const { addProductToCart, changeSeeCart, addQuantity, reduceQuantity } =
-  productsSlice.actions;
+export const {
+  addProductToCart,
+  changeSeeCart,
+  addQuantity,
+  reduceQuantity,
+  removeProduct,
+  clearCart,
+} = productsSlice.actions;
 
 export default productsSlice.reducer;

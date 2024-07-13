@@ -10,6 +10,8 @@ import axios from "axios";
 const Products = () => {
   const [category, setCategory] = useState("featured");
   const [vitu, setVitu] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [totalPages, setTotalPages] = useState(0);
   const dispatch = useDispatch();
   const fetchProducts = async (page) => {
     const response = await axios.get(
@@ -25,15 +27,17 @@ const Products = () => {
         },
       }
     );
+    setTotalPages(response.data.total / response.data.size);
     return response.data;
   };
   const getImageUrl = (imageUrl) => {
     return `https://api.timbu.cloud/images/${imageUrl}`;
   };
   useEffect(() => {
-    fetchProducts(1).then((data) => setVitu(data.items));
-  }, []);
-  console.log(vitu);
+    fetchProducts(currentPage).then((data) => {
+      setVitu(data.items);
+    });
+  }, [currentPage]);
   return (
     <section id="products">
       <div className="nav-tab">
@@ -86,8 +90,28 @@ const Products = () => {
           );
         })}
       </div>
-      <div className="view-more">
-        <button>View More</button>
+      <div className="pagination-controls">
+        <button
+          onClick={() => {
+            if (currentPage > 1) {
+              setCurrentPage(currentPage - 1);
+            }
+          }}
+        >
+          Previous
+        </button>
+        <span>
+          Page {currentPage} of {totalPages}
+        </span>
+        <button
+          onClick={() => {
+            if (currentPage < totalPages) {
+              setCurrentPage(currentPage + 1);
+            }
+          }}
+        >
+          Next
+        </button>
       </div>
     </section>
   );
