@@ -15,8 +15,11 @@ const Cart = () => {
   const visible = useSelector((state) => state.products.setCart);
   const cartItems = useSelector((state) => state.products.cart);
   const totalPrice = cartItems.reduce((total, product) => {
-    return total + product.price * product.quantity;
+    return total + product.current_price[0].USD[0] * product.quantity;
   }, 0);
+  const getImageUrl = (imageUrl) => {
+    return `https://api.timbu.cloud/images/${imageUrl}`;
+  };
   return (
     <div className={visible ? "cart-container" : "no-cart"}>
       <div className="top">
@@ -28,7 +31,7 @@ const Cart = () => {
           return (
             <div className="cart-product" key={product.id}>
               <div className="cart-img">
-                <img src={product.image} alt="" />
+                <img src={getImageUrl(product.photos[0].url)} alt="" />
               </div>
               <div className="product-info">
                 <div>
@@ -50,7 +53,12 @@ const Cart = () => {
                     </button>
                   </div>
                 </div>
-                <p>${(product.price * product.quantity).toFixed(2)}</p>
+                <p>
+                  $
+                  {(product.current_price[0].USD[0] * product.quantity).toFixed(
+                    2
+                  )}
+                </p>
               </div>
             </div>
           );

@@ -27,6 +27,9 @@ const Products = () => {
     );
     return response.data;
   };
+  const getImageUrl = (imageUrl) => {
+    return `https://api.timbu.cloud/images/${imageUrl}`;
+  };
   useEffect(() => {
     fetchProducts(1).then((data) => setVitu(data.items));
   }, []);
@@ -72,7 +75,7 @@ const Products = () => {
                 }}
               />
               <div className="product-img">
-                {/* <img src={product.image} alt="" /> */}
+                <img src={getImageUrl(product.photos[0]?.url)} alt="" />
               </div>
               <div className="product-details">
                 <h3>{product.name}</h3>
