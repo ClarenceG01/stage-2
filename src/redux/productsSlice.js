@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import successToast from "../utils/successToast";
 
 const initialState = {
   products: [],
@@ -20,6 +21,7 @@ const productsSlice = createSlice({
             : product.quantity
         );
       }
+      successToast("Product added to cart");
     },
     addQuantity: (state, action) => {
       const product = state.cart.find(
@@ -38,9 +40,11 @@ const productsSlice = createSlice({
       const { id } = action.payload;
       const newCart = state.cart.filter((product) => product.id !== id);
       state.cart = newCart;
+      successToast("Product removed from cart");
     },
     clearCart: (state, action) => {
       state.cart = [];
+      successToast("Cart cleared");
     },
     changeSeeCart: (state) => {
       state.setCart = !state.setCart;

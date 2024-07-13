@@ -183,3 +183,12 @@
   margin: 1rem auto;
   border-radius: 5px;
 }
+.cart-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+.cart-icon:hover {
+  transform: scale(1.1);
+}

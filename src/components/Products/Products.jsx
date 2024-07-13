@@ -90,8 +90,24 @@ const Products = () => {
           );
         })}
       </div>
-      <div className="pagination-controls">
+      <div
+        className="pagination-controls"
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          width: "40%",
+          margin: "0 auto",
+        }}
+      >
         <button
+          style={{
+            padding: "10px",
+            borderRadius: "5px",
+            border: "none",
+            backgroundColor: "#4d73f8",
+            color: "white",
+          }}
           onClick={() => {
             if (currentPage > 1) {
               setCurrentPage(currentPage - 1);
@@ -104,6 +120,13 @@ const Products = () => {
           Page {currentPage} of {totalPages}
         </span>
         <button
+          style={{
+            padding: "10px",
+            borderRadius: "5px",
+            border: "none",
+            backgroundColor: "#4d73f8",
+            color: "white",
+          }}
           onClick={() => {
             if (currentPage < totalPages) {
               setCurrentPage(currentPage + 1);
