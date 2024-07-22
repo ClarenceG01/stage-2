@@ -56,8 +56,6 @@ const SingleProduct = () => {
   const location = useLocation();
   const product = location.state;
   const [activeImage, setActiveImage] = useState(product.images[0]);
-  console.log(product.images);
-  console.log(activeImage);
 
   return (
     <section id="single-product">

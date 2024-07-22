@@ -10,14 +10,15 @@ import products from "../../../data.json";
 const Products = () => {
   const navigate = useNavigate();
   const [category, setCategory] = useState("featured");
-  const [vitu, setVitu] = useState([]);
-  const [currentPage, setCurrentPage] = useState(1);
-  const [totalPages, setTotalPages] = useState(0);
   const cart = useSelector((state) => state.products.cart);
   const dispatch = useDispatch();
-  console.log(products);
-  console.log(category);
-  useEffect(() => {}, [currentPage]);
+  // pagination
+  const [currentPage, setCurrentPage] = useState(1);
+  const productsPerPage = 6;
+  const endSlice = currentPage * productsPerPage;
+  const startSlice = endSlice - productsPerPage;
+  const totalPages = Math.ceil(products[category].length / productsPerPage);
+  console.log(currentPage, startSlice, endSlice, totalPages);
   return (
     <section id="products">
       <div className="nav-tab">
@@ -52,27 +53,29 @@ const Products = () => {
         </div>
       </div>
       <div className="products-grid">
-        {products[category].map((product, index) => {
-          return (
-            <ProductCard
-              className="single-product"
-              key={index}
-              onClick={() =>
-                navigate(`/product/${product.name}`, { state: product })
-              }
-            >
-              <img className="cart-icon" src={cartIcon} alt="cart icon" />
-              <div className="product-img">
-                <img src={product.images[0]} alt="" />
-              </div>
-              <div className="product-details">
-                <h3>{product.name}</h3>
-                <p className="desc">{product.description}</p>
-                <p className="price">${product.price}</p>
-              </div>
-            </ProductCard>
-          );
-        })}
+        {products[category]
+          .slice(startSlice, endSlice)
+          .map((product, index) => {
+            return (
+              <ProductCard
+                className="single-product"
+                key={index}
+                onClick={() =>
+                  navigate(`/product/${product.name}`, { state: product })
+                }
+              >
+                <img className="cart-icon" src={cartIcon} alt="cart icon" />
+                <div className="product-img">
+                  <img src={product.images[0]} alt="" />
+                </div>
+                <div className="product-details">
+                  <h3>{product.name}</h3>
+                  <p className="desc">{product.description}</p>
+                  <p className="price">${product.price}</p>
+                </div>
+              </ProductCard>
+            );
+          })}
       </div>
       <div
         className="pagination-controls"
