@@ -1,0 +1,628 @@
+{
+  "featured": [
+    {
+      "name": "Aspirin",
+      "description": "Pain reliever and fever reducer",
+      "price": 5.99,
+      "images": [
+        "assets/products/asp1-removebg-preview.png",
+        "assets/products/asp2-removebg-preview.png",
+        "assets/products/asp3-removebg-preview.png"
+      ]
+    },
+    {
+      "name": "Ibuprofen",
+      "description": "Nonsteroidal anti-inflammatory drug",
+      "price": 8.99,
+      "images": [
+        "public/assets/products/bruf1-removebg-preview.png",
+        "public/assets/products/bruf2-removebg-preview.png",
+        "public/assets/products/bruf3-removebg-preview.png"
+      ]
+    },
+    {
+      "name": "Multivitamin",
+      "description": "Daily multivitamin supplement for overall health",
+      "price": 12.99,
+      "images": [
+        "assets/products/multi1-removebg-preview.png",
+        "assets/products/multi2-removebg-preview.png",
+        "assets/products/multi3-removebg-preview.png"
+      ]
+    },
+    {
+      "name": "Fish Oil",
+      "description": "Omega-3 fatty acids for heart and brain health",
+      "price": 19.99,
+      "images": [
+        "assets/products/fish1-removebg-preview.png",
+        "assets/products/fish2-removebg-preview.png",
+        "assets/products/fish3-removebg-preview.png"
+      ]
+    },
+    {
+      "name": "Probiotic",
+      "description": "Promotes healthy digestion and gut flora",
+      "price": 16.99,
+      "images": [
+        "public/assets/products/prob1-removebg-preview.png",
+        "public/assets/products/prob2-removebg-preview.png",
+        "public/assets/products/prob3-removebg-preview.png"
+      ]
+    },
+    {
+      "name": "Cold Medicine",
+      "description": "Relieves symptoms of cold and flu",
+      "price": 8.49,
+      "images": [
+        "assets/products/cold1-removebg-preview.png",
+        "assets/products/cold2-removebg-preview.png",
+        "assets/products/cold3-removebg-preview.png"
+      ]
+    },
+    {
+      "name": "Allergy Relief",
+      "description": "Reduces symptoms of allergies such as sneezing and itching",
+      "price": 11.99,
+      "images": [
+        "assets/products/all1-removebg-preview.png",
+        "assets/products/all2-removebg-preview.png",
+        "assets/products/all3-removebg-preview.png"
+      ]
+    },
+    {
+      "name": "Digestive Enzymes",
+      "description": "Helps in the digestion of food and absorption of nutrients",
+      "price": 15.99,
+      "images": [
+        "public/assets/products/dig1-removebg-preview.png",
+        "public/assets/products/dig2-removebg-preview.png",
+        "public/assets/products/dig3-removebg-preview.png"
+      ]
+    },
+    {
+      "name": "Anti-Fungal Cream",
+      "description": "Treats fungal infections such as athlete's foot and ringworm",
+      "price": 9.49,
+      "images": [
+        "public/assets/products/anti1-removebg-preview.png",
+        "public/assets/products/anti2-removebg-preview.png",
+        "public/assets/products/anti3-removebg-preview.png"
+      ]
+    },
+    {
+      "name": "Ear Drops",
+      "description": "Treats ear infections and relieves ear pain",
+      "price": 6.49,
+      "images": [
+        "public/assets/ear_drops1.jpg",
+        "public/assets/ear_drops2.jpg",
+        "public/assets/ear_drops3.jpg"
+      ]
+    },
+    {
+      "name": "Paracetamol",
+      "description": "Commonly used to relieve pain and reduce fever",
+      "price": 4.99,
+      "images": [
+        "public/assets/paracetamol1.jpg",
+        "public/assets/paracetamol2.jpg",
+        "public/assets/paracetamol3.jpg"
+      ]
+    },
+    {
+      "name": "Antibiotic Ointment",
+      "description": "Used to prevent infections in minor cuts, scrapes, and burns",
+      "price": 6.99,
+      "images": [
+        "public/assets/antibiotic_ointment1.jpg",
+        "public/assets/antibiotic_ointment2.jpg",
+        "public/assets/antibiotic_ointment3.jpg"
+      ]
+    },
+    {
+      "name": "Cough Syrup",
+      "description": "Used to relieve cough and cold symptoms",
+      "price": 7.99,
+      "images": [
+        "public/assets/cough_syrup1.jpg",
+        "public/assets/cough_syrup2.jpg",
+        "public/assets/cough_syrup3.jpg"
+      ]
+    },
+    {
+      "name": "Melatonin",
+      "description": "Natural sleep aid for better rest",
+      "price": 10.99,
+      "images": [
+        "public/assets/melatonin1.jpg",
+        "public/assets/melatonin2.jpg",
+        "public/assets/melatonin3.jpg"
+      ]
+    },
+    {
+      "name": "Antacid",
+      "description": "Provides relief from heartburn and acid indigestion",
+      "price": 7.99,
+      "images": [
+        "public/assets/antacid1.jpg",
+        "public/assets/antacid2.jpg",
+        "public/assets/antacid3.jpg"
+      ]
+    },
+    {
+      "name": "Laxative",
+      "description": "Helps relieve constipation",
+      "price": 6.99,
+      "images": [
+        "public/assets/laxative1.jpg",
+        "public/assets/laxative2.jpg",
+        "public/assets/laxative3.jpg"
+      ]
+    },
+    {
+      "name": "Eye Drops",
+      "description": "Relieves dryness and irritation of the eyes",
+      "price": 5.49,
+      "images": [
+        "public/assets/eye_drops1.jpg",
+        "public/assets/eye_drops2.jpg",
+        "public/assets/eye_drops3.jpg"
+      ]
+    },
+    {
+      "name": "Nasal Spray",
+      "description": "Clears nasal congestion and reduces nasal inflammation",
+      "price": 7.49,
+      "images": [
+        "public/assets/nasal_spray1.jpg",
+        "public/assets/nasal_spray2.jpg",
+        "public/assets/nasal_spray3.jpg"
+      ]
+    },
+    {
+      "name": "Anti-Dandruff Shampoo",
+      "description": "Treats dandruff and seborrheic dermatitis",
+      "price": 10.49,
+      "images": [
+        "public/assets/anti_dandruff_shampoo1.jpg",
+        "public/assets/anti_dandruff_shampoo2.jpg",
+        "public/assets/anti_dandruff_shampoo3.jpg"
+      ]
+    },
+    {
+      "name": "Lip Balm",
+      "description": "Moisturizes and protects dry, chapped lips",
+      "price": 3.49,
+      "images": [
+        "public/assets/lip_balm1.jpg",
+        "public/assets/lip_balm2.jpg",
+        "public/assets/lip_balm3.jpg"
+      ]
+    }
+  ],
+  "latest": [
+    {
+      "name": "Vitamin C",
+      "description": "Boosts immune system and antioxidant support",
+      "price": 9.99,
+      "images": [
+        "public/assets/vitamin_c1.jpg",
+        "public/assets/vitamin_c2.jpg",
+        "public/assets/vitamin_c3.jpg"
+      ]
+    },
+    {
+      "name": "Calcium Supplement",
+      "description": "Supports bone health and prevents osteoporosis",
+      "price": 14.99,
+      "images": [
+        "public/assets/calcium_supplement1.jpg",
+        "public/assets/calcium_supplement2.jpg",
+        "public/assets/calcium_supplement3.jpg"
+      ]
+    },
+    {
+      "name": "Hydrocortisone Cream",
+      "description": "Relieves itching and inflammation from skin conditions",
+      "price": 4.99,
+      "images": [
+        "public/assets/hydrocortisone_cream1.jpg",
+        "public/assets/hydrocortisone_cream2.jpg",
+        "public/assets/hydrocortisone_cream3.jpg"
+      ]
+    },
+    {
+      "name": "Hand Sanitizer",
+      "description": "Kills germs and bacteria on hands",
+      "price": 2.99,
+      "images": [
+        "public/assets/hand_sanitizer1.jpg",
+        "public/assets/hand_sanitizer2.jpg",
+        "public/assets/hand_sanitizer3.jpg"
+      ]
+    },
+    {
+      "name": "Sunscreen",
+      "description": "Protects skin from harmful UV rays",
+      "price": 12.49,
+      "images": [
+        "public/assets/sunscreen1.jpg",
+        "public/assets/sunscreen2.jpg",
+        "public/assets/sunscreen3.jpg"
+      ]
+    },
+    {
+      "name": "First Aid Kit",
+      "description": "Essential items for basic first aid treatment",
+      "price": 19.99,
+      "images": [
+        "public/assets/first_aid_kit1.jpg",
+        "public/assets/first_aid_kit2.jpg",
+        "public/assets/first_aid_kit3.jpg"
+      ]
+    },
+    {
+      "name": "Thermometer",
+      "description": "Digital thermometer for accurate body temperature measurement",
+      "price": 13.99,
+      "images": [
+        "public/assets/thermometer1.jpg",
+        "public/assets/thermometer2.jpg",
+        "public/assets/thermometer3.jpg"
+      ]
+    },
+    {
+      "name": "Bandages",
+      "description": "Adhesive bandages for covering minor cuts and scrapes",
+      "price": 4.49,
+      "images": [
+        "public/assets/bandages1.jpg",
+        "public/assets/bandages2.jpg",
+        "public/assets/bandages3.jpg"
+      ]
+    },
+    {
+      "name": "Hydration Tablets",
+      "description": "Electrolyte tablets for rehydration",
+      "price": 7.99,
+      "images": [
+        "public/assets/hydration_tablets1.jpg",
+        "public/assets/hydration_tablets2.jpg",
+        "public/assets/hydration_tablets3.jpg"
+      ]
+    },
+    {
+      "name": "Antiseptic Solution",
+      "description": "Used for cleaning and disinfecting wounds",
+      "price": 6.49,
+      "images": [
+        "public/assets/antiseptic_solution1.jpg",
+        "public/assets/antiseptic_solution2.jpg",
+        "public/assets/antiseptic_solution3.jpg"
+      ]
+    },
+    {
+      "name": "Vitamin D",
+      "description": "Supports bone health and immune function",
+      "price": 11.99,
+      "images": [
+        "public/assets/vitamin_d1.jpg",
+        "public/assets/vitamin_d2.jpg",
+        "public/assets/vitamin_d3.jpg"
+      ]
+    },
+    {
+      "name": "Echinacea",
+      "description": "Herbal supplement for immune system support",
+      "price": 8.99,
+      "images": [
+        "public/assets/echinacea1.jpg",
+        "public/assets/echinacea2.jpg",
+        "public/assets/echinacea3.jpg"
+      ]
+    },
+    {
+      "name": "Calamine Lotion",
+      "description": "Relieves itching and discomfort from skin irritations",
+      "price": 5.99,
+      "images": [
+        "public/assets/calamine_lotion1.jpg",
+        "public/assets/calamine_lotion2.jpg",
+        "public/assets/calamine_lotion3.jpg"
+      ]
+    },
+    {
+      "name": "Protein Powder",
+      "description": "Nutritional supplement for muscle building and recovery",
+      "price": 24.99,
+      "images": [
+        "public/assets/protein_powder1.jpg",
+        "public/assets/protein_powder2.jpg",
+        "public/assets/protein_powder3.jpg"
+      ]
+    },
+    {
+      "name": "Zinc Supplement",
+      "description": "Supports immune function and skin health",
+      "price": 9.49,
+      "images": [
+        "public/assets/zinc_supplement1.jpg",
+        "public/assets/zinc_supplement2.jpg",
+        "public/assets/zinc_supplement3.jpg"
+      ]
+    },
+    {
+      "name": "Cough Drops",
+      "description": "Soothes throat and relieves cough",
+      "price": 3.99,
+      "images": [
+        "public/assets/cough_drops1.jpg",
+        "public/assets/cough_drops2.jpg",
+        "public/assets/cough_drops3.jpg"
+      ]
+    },
+    {
+      "name": "Prenatal Vitamins",
+      "description": "Essential vitamins and minerals for pregnancy",
+      "price": 15.99,
+      "images": [
+        "public/assets/prenatal_vitamins1.jpg",
+        "public/assets/prenatal_vitamins2.jpg",
+        "public/assets/prenatal_vitamins3.jpg"
+      ]
+    },
+    {
+      "name": "Hair Growth Supplement",
+      "description": "Promotes healthy hair growth",
+      "price": 18.99,
+      "images": [
+        "public/assets/hair_growth_supplement1.jpg",
+        "public/assets/hair_growth_supplement2.jpg",
+        "public/assets/hair_growth_supplement3.jpg"
+      ]
+    },
+    {
+      "name": "Collagen Peptides",
+      "description": "Supports skin, hair, nail, and joint health",
+      "price": 27.99,
+      "images": [
+        "public/assets/collagen_peptides1.jpg",
+        "public/assets/collagen_peptides2.jpg",
+        "public/assets/collagen_peptides3.jpg"
+      ]
+    },
+    {
+      "name": "Antibacterial Wipes",
+      "description": "Kills germs and bacteria on surfaces",
+      "price": 5.99,
+      "images": [
+        "public/assets/antibacterial_wipes1.jpg",
+        "public/assets/antibacterial_wipes2.jpg",
+        "public/assets/antibacterial_wipes3.jpg"
+      ]
+    },
+    {
+      "name": "Insect Repellent",
+      "description": "Repels mosquitoes and other insects",
+      "price": 7.99,
+      "images": [
+        "public/assets/insect_repellent1.jpg",
+        "public/assets/insect_repellent2.jpg",
+        "public/assets/insect_repellent3.jpg"
+      ]
+    }
+  ],
+  "special": [
+    {
+      "name": "Elderberry Syrup",
+      "description": "Herbal supplement for immune support",
+      "price": 13.99,
+      "images": [
+        "public/assets/elderberry_syrup1.jpg",
+        "public/assets/elderberry_syrup2.jpg",
+        "public/assets/elderberry_syrup3.jpg"
+      ]
+    },
+    {
+      "name": "Glucosamine",
+      "description": "Supports joint health and mobility",
+      "price": 18.99,
+      "images": [
+        "public/assets/glucosamine1.jpg",
+        "public/assets/glucosamine2.jpg",
+        "public/assets/glucosamine3.jpg"
+      ]
+    },
+    {
+      "name": "Iron Supplement",
+      "description": "Supports healthy red blood cells and prevents anemia",
+      "price": 9.99,
+      "images": [
+        "public/assets/iron_supplement1.jpg",
+        "public/assets/iron_supplement2.jpg",
+        "public/assets/iron_supplement3.jpg"
+      ]
+    },
+    {
+      "name": "Biotin",
+      "description": "Supports healthy hair, skin, and nails",
+      "price": 14.49,
+      "images": [
+        "public/assets/biotin1.jpg",
+        "public/assets/biotin2.jpg",
+        "public/assets/biotin3.jpg"
+      ]
+    },
+    {
+      "name": "Cranberry Supplements",
+      "description": "Supports urinary tract health",
+      "price": 12.99,
+      "images": [
+        "public/assets/cranberry_supplements1.jpg",
+        "public/assets/cranberry_supplements2.jpg",
+        "public/assets/cranberry_supplements3.jpg"
+      ]
+    },
+    {
+      "name": "Magnesium",
+      "description": "Supports muscle and nerve function",
+      "price": 8.99,
+      "images": [
+        "public/assets/magnesium1.jpg",
+        "public/assets/magnesium2.jpg",
+        "public/assets/magnesium3.jpg"
+      ]
+    },
+    {
+      "name": "Omega-3 Gummies",
+      "description": "Supports heart and brain health",
+      "price": 17.99,
+      "images": [
+        "public/assets/omega3_gummies1.jpg",
+        "public/assets/omega3_gummies2.jpg",
+        "public/assets/omega3_gummies3.jpg"
+      ]
+    },
+    {
+      "name": "Fiber Supplement",
+      "description": "Supports digestive health and regularity",
+      "price": 10.49,
+      "images": [
+        "public/assets/fiber_supplement1.jpg",
+        "public/assets/fiber_supplement2.jpg",
+        "public/assets/fiber_supplement3.jpg"
+      ]
+    },
+    {
+      "name": "CoQ10",
+      "description": "Supports heart health and energy production",
+      "price": 29.99,
+      "images": [
+        "public/assets/coq10_1.jpg",
+        "public/assets/coq10_2.jpg",
+        "public/assets/coq10_3.jpg"
+      ]
+    },
+    {
+      "name": "Electrolyte Powder",
+      "description": "Replenishes electrolytes and supports hydration",
+      "price": 12.49,
+      "images": [
+        "public/assets/electrolyte_powder1.jpg",
+        "public/assets/electrolyte_powder2.jpg",
+        "public/assets/electrolyte_powder3.jpg"
+      ]
+    },
+    {
+      "name": "Joint Support",
+      "description": "Supports joint health and mobility",
+      "price": 19.99,
+      "images": [
+        "public/assets/joint_support1.jpg",
+        "public/assets/joint_support2.jpg",
+        "public/assets/joint_support3.jpg"
+      ]
+    },
+    {
+      "name": "Milk Thistle",
+      "description": "Supports liver health and detoxification",
+      "price": 15.99,
+      "images": [
+        "public/assets/milk_thistle1.jpg",
+        "public/assets/milk_thistle2.jpg",
+        "public/assets/milk_thistle3.jpg"
+      ]
+    },
+    {
+      "name": "B-Complex",
+      "description": "Supports energy production and overall health",
+      "price": 11.99,
+      "images": [
+        "public/assets/b_complex1.jpg",
+        "public/assets/b_complex2.jpg",
+        "public/assets/b_complex3.jpg"
+      ]
+    },
+    {
+      "name": "Turmeric Curcumin",
+      "description": "Supports joint health and has anti-inflammatory properties",
+      "price": 18.99,
+      "images": [
+        "public/assets/turmeric_curcumin1.jpg",
+        "public/assets/turmeric_curcumin2.jpg",
+        "public/assets/turmeric_curcumin3.jpg"
+      ]
+    },
+    {
+      "name": "Ashwagandha",
+      "description": "Supports stress relief and overall wellness",
+      "price": 16.99,
+      "images": [
+        "public/assets/ashwagandha1.jpg",
+        "public/assets/ashwagandha2.jpg",
+        "public/assets/ashwagandha3.jpg"
+      ]
+    },
+    {
+      "name": "Melatonin Gummies",
+      "description": "Natural sleep aid in gummy form",
+      "price": 11.49,
+      "images": [
+        "public/assets/melatonin_gummies1.jpg",
+        "public/assets/melatonin_gummies2.jpg",
+        "public/assets/melatonin_gummies3.jpg"
+      ]
+    },
+    {
+      "name": "Probiotic Gummies",
+      "description": "Promotes healthy digestion and gut flora",
+      "price": 13.99,
+      "images": [
+        "public/assets/probiotic_gummies1.jpg",
+        "public/assets/probiotic_gummies2.jpg",
+        "public/assets/probiotic_gummies3.jpg"
+      ]
+    },
+    {
+      "name": "Vitamin B12",
+      "description": "Supports energy production and nervous system health",
+      "price": 10.99,
+      "images": [
+        "public/assets/vitamin_b12_1.jpg",
+        "public/assets/vitamin_b12_2.jpg",
+        "public/assets/vitamin_b12_3.jpg"
+      ]
+    },
+    {
+      "name": "Ginseng",
+      "description": "Herbal supplement for energy and mental performance",
+      "price": 17.49,
+      "images": [
+        "public/assets/ginseng1.jpg",
+        "public/assets/ginseng2.jpg",
+        "public/assets/ginseng3.jpg"
+      ]
+    },
+    {
+      "name": "Resveratrol",
+      "description": "Supports heart health and has antioxidant properties",
+      "price": 22.99,
+      "images": [
+        "public/assets/resveratrol1.jpg",
+        "public/assets/resveratrol2.jpg",
+        "public/assets/resveratrol3.jpg"
+      ]
+    },
+    {
+      "name": "Green Tea Extract",
+      "description": "Supports weight loss and antioxidant health",
+      "price": 14.99,
+      "images": [
+        "public/assets/green_tea_extract1.jpg",
+        "public/assets/green_tea_extract2.jpg",
+        "public/assets/green_tea_extract3.jpg"
+      ]
+    }
+  ]
+}

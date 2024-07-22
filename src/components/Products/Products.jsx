@@ -4,8 +4,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { addProductToCart, changeSeeCart } from "../../redux/productsSlice";
 import ProductCard from "../../UI/ProductCard";
 import cartIcon from "/assets/mdi_cart.png";
-import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import products from "../../../data.json";
 
 const Products = () => {
   const navigate = useNavigate();
@@ -15,31 +15,9 @@ const Products = () => {
   const [totalPages, setTotalPages] = useState(0);
   const cart = useSelector((state) => state.products.cart);
   const dispatch = useDispatch();
-  const fetchProducts = async (page) => {
-    const response = await axios.get(
-      "https://timbu-get-all-products.reavdev.workers.dev/",
-      {
-        params: {
-          organization_id: import.meta.env.VITE_ORGANIZATION_ID,
-          reverse_sort: false,
-          page: page,
-          size: 10,
-          Appid: "FBTOWENILIDEZ9F",
-          Apikey: "9c368623c67d4536a7ad00aa4a106ba720240713112146733729",
-        },
-      }
-    );
-    setTotalPages(Math.ceil(response.data.total / response.data.size));
-    return response.data;
-  };
-  const getImageUrl = (imageUrl) => {
-    return `https://api.timbu.cloud/images/${imageUrl}`;
-  };
-  useEffect(() => {
-    fetchProducts(currentPage).then((data) => {
-      setVitu(data.items);
-    });
-  }, [currentPage]);
+  console.log(products);
+  console.log(category);
+  useEffect(() => {}, [currentPage]);
   return (
     <section id="products">
       <div className="nav-tab">
@@ -74,21 +52,23 @@ const Products = () => {
         </div>
       </div>
       <div className="products-grid">
-        {vitu.map((product) => {
+        {products[category].map((product, index) => {
           return (
             <ProductCard
               className="single-product"
-              key={product.id}
-              onClick={() => navigate(`/product/${product.id}`)}
+              key={index}
+              onClick={() =>
+                navigate(`/product/${product.name}`, { state: product })
+              }
             >
               <img className="cart-icon" src={cartIcon} alt="cart icon" />
               <div className="product-img">
-                <img src={getImageUrl(product.photos[0]?.url)} alt="" />
+                <img src={product.images[0]} alt="" />
               </div>
               <div className="product-details">
                 <h3>{product.name}</h3>
                 <p className="desc">{product.description}</p>
-                <p className="price">${product.current_price[0].USD}</p>
+                <p className="price">${product.price}</p>
               </div>
             </ProductCard>
           );
