@@ -17,12 +17,10 @@ const Cart = () => {
   const dispatch = useDispatch();
   const visible = useSelector((state) => state.products.setCart);
   const cartItems = useSelector((state) => state.products.cart);
+  console.log(cartItems);
   const totalPrice = cartItems.reduce((total, product) => {
-    return total + product.current_price[0].USD[0] * product.quantity;
+    return total + product.price * product.quantity;
   }, 0);
-  const getImageUrl = (imageUrl) => {
-    return `https://api.timbu.cloud/images/${imageUrl}`;
-  };
   return (
     <div className={visible ? "cart-container" : "no-cart"}>
       <div className="top">
@@ -34,7 +32,7 @@ const Cart = () => {
           return (
             <div className="cart-product" key={product.id}>
               <div className="cart-img">
-                <img src={getImageUrl(product.photos[0].url)} alt="" />
+                <img src={product.images[0]} alt="" />
               </div>
               <div className="product-info">
                 <div>
@@ -63,12 +61,7 @@ const Cart = () => {
                     alignItems: "center",
                   }}
                 >
-                  <p>
-                    $
-                    {(
-                      product.current_price[0].USD[0] * product.quantity
-                    ).toFixed(2)}
-                  </p>
+                  <p>${(product.price * product.quantity).toFixed(2)}</p>
                   <RiDeleteBin6Line
                     style={{
                       cursor: "pointer",

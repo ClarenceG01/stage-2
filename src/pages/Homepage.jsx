@@ -14,7 +14,6 @@ const Homepage = () => {
       <Hero />
       <Products />
       <Service />
-      <Reviews />
       <Contact />
       <Cart />
     </div>
