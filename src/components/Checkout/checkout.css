@@ -6,14 +6,16 @@
 }
 .checkout-nav {
   display: flex;
-  width: 390px;
-  padding: 0px 24px;
-  justify-content: space-between;
+  width: 100%;
+  padding: 1rem 24px;
   align-items: center;
-  background-color: red;
   border-bottom: 1px solid #e5e5e5;
 }
+.checkout-nav img {
+  cursor: pointer;
+}
 .checkout-nav p {
+  margin-left: 4rem;
   color: #252425;
   font-family: Inter;
   font-size: 16px;
@@ -21,17 +23,58 @@
   font-weight: 500;
   line-height: 125%; /* 20px */
 }
-.checkout-total div:first-child input {
+.checkout-payment {
+  padding: 1rem 24px;
+}
+.checkout-payment div:first-child {
   display: flex;
-  padding: 0px 12px;
+  justify-content: space-between;
   align-items: center;
-  gap: 8px;
-  flex: 1 0 0;
-  align-self: stretch;
-  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+.checkout-payment div:first-child p {
+  color: #252425;
+  font-family: Lora;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%; /* 25px */
+}
+.checkout-payment button {
+  display: flex;
+  height: 36px;
+  padding: 14px 16px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #fff;
+  color: #252425;
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+  cursor: pointer;
+}
+.checkout-payment button:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+}
+.checkout-total div:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+.checkout-total div:first-child input {
   height: 48px;
   width: 215px;
+  padding: 0px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-right: 1rem;
 }
 .checkout-total div:first-child button {
   display: flex;
@@ -49,14 +92,27 @@
   font-style: normal;
   font-weight: 500;
   line-height: 20px; /* 142.857% */
+  cursor: pointer;
 }
-.checkout-total div:last-child button {
+.checkout-total div:first-child button:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+}
+.checkout-total div:first-child button:active {
+  transform: scale(0.95);
+  transition: transform 0.2s ease-in-out;
+  background-color: #fff;
+  color: #1e1e1e;
+  border: 1px solid #1e1e1e;
+}
+.checkout-total div:last-child {
+  width: 100%;
   display: flex;
-  padding: 14px 24px;
   justify-content: center;
   align-items: center;
-  flex: 1 0 0;
-  align-self: stretch;
+}
+.checkout-total div:last-child button {
+  padding: 14px 24px;
   border-radius: 6px;
   background: #1e1e1e;
   color: #fff;
@@ -67,6 +123,42 @@
   font-weight: 500;
   line-height: 20px; /* 125% */
   border: none;
-  width: 294px;
-  height: 20px;
+  min-width: 294px;
+  cursor: pointer;
+}
+
+.checkout-total div:last-child button:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+}
+.checkout-total div:last-child button:active {
+  transform: scale(0.95);
+  transition: transform 0.2s ease-in-out;
+  background-color: #fff;
+  color: #1e1e1e;
+  border: 1px solid #1e1e1e;
+}
+.checkout-total div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0;
+}
+.checkout-total div:nth-child(2) p:first-child {
+  color: #121212;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 20px */
+}
+.checkout-total div:nth-child(2) p:last-child {
+  color: #000;
+  text-align: right;
+  font-feature-settings: "calt" off, "liga" off;
+  font-family: Lora;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 28px */
 }

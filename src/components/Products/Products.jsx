@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./products.css";
 import { useDispatch, useSelector } from "react-redux";
-import { addProductToCart, changeSeeCart } from "../../redux/productsSlice";
+import { changeSeeCart } from "../../redux/productsSlice";
 import ProductCard from "../../UI/ProductCard";
 import cartIcon from "/assets/mdi_cart.png";
 import { useNavigate } from "react-router-dom";
@@ -18,7 +18,6 @@ const Products = () => {
   const endSlice = currentPage * productsPerPage;
   const startSlice = endSlice - productsPerPage;
   const totalPages = Math.ceil(products[category].length / productsPerPage);
-  console.log(currentPage, startSlice, endSlice, totalPages);
   return (
     <section id="products">
       <div className="nav-tab">

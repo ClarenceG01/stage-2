@@ -17,9 +17,9 @@
       "description": "Nonsteroidal anti-inflammatory drug",
       "price": 8.99,
       "images": [
-        "public/assets/products/bruf1-removebg-preview.png",
-        "public/assets/products/bruf2-removebg-preview.png",
-        "public/assets/products/bruf3-removebg-preview.png"
+        "assets/products/bruf1-removebg-preview.png",
+        "assets/products/bruf2-removebg-preview.png",
+        "assets/products/bruf3-removebg-preview.png"
       ]
     },
     {
@@ -50,9 +50,9 @@
       "description": "Promotes healthy digestion and gut flora",
       "price": 16.99,
       "images": [
-        "public/assets/products/prob1-removebg-preview.png",
-        "public/assets/products/prob2-removebg-preview.png",
-        "public/assets/products/prob3-removebg-preview.png"
+        "assets/products/prob1-removebg-preview.png",
+        "assets/products/prob2-removebg-preview.png",
+        "assets/products/prob3-removebg-preview.png"
       ]
     },
     {
@@ -83,9 +83,9 @@
       "description": "Helps in the digestion of food and absorption of nutrients",
       "price": 15.99,
       "images": [
-        "public/assets/products/dig1-removebg-preview.png",
-        "public/assets/products/dig2-removebg-preview.png",
-        "public/assets/products/dig3-removebg-preview.png"
+        "assets/products/dig1-removebg-preview.png",
+        "assets/products/dig2-removebg-preview.png",
+        "assets/products/dig3-removebg-preview.png"
       ]
     },
     {
@@ -94,9 +94,9 @@
       "description": "Treats fungal infections such as athlete's foot and ringworm",
       "price": 9.49,
       "images": [
-        "public/assets/products/anti1-removebg-preview.png",
-        "public/assets/products/anti2-removebg-preview.png",
-        "public/assets/products/anti3-removebg-preview.png"
+        "assets/products/anti1-removebg-preview.png",
+        "assets/products/anti2-removebg-preview.png",
+        "assets/products/anti3-removebg-preview.png"
       ]
     },
     {
@@ -105,9 +105,9 @@
       "description": "Treats ear infections and relieves ear pain",
       "price": 6.49,
       "images": [
-        "public/assets/ear_drops1.jpg",
-        "public/assets/ear_drops2.jpg",
-        "public/assets/ear_drops3.jpg"
+        "assets/ear_drops1.jpg",
+        "assets/ear_drops2.jpg",
+        "assets/ear_drops3.jpg"
       ]
     },
     {
@@ -116,9 +116,9 @@
       "description": "Commonly used to relieve pain and reduce fever",
       "price": 4.99,
       "images": [
-        "public/assets/paracetamol1.jpg",
-        "public/assets/paracetamol2.jpg",
-        "public/assets/paracetamol3.jpg"
+        "assets/paracetamol1.jpg",
+        "assets/paracetamol2.jpg",
+        "assets/paracetamol3.jpg"
       ]
     },
     {
@@ -396,6 +396,206 @@
         "public/assets/charcoal_toothpaste1.jpg",
         "public/assets/charcoal_toothpaste2.jpg",
         "public/assets/charcoal_toothpaste3.jpg"
+      ]
+    }
+  ],
+  "special": [
+    {
+      "id": 37,
+      "name": "Omega-3 Capsules",
+      "description": "High-quality omega-3 fatty acids for cardiovascular health",
+      "price": 17.99,
+      "images": [
+        "public/assets/special/omega3-1.jpg",
+        "public/assets/special/omega3-2.jpg",
+        "public/assets/special/omega3-3.jpg"
+      ]
+    },
+    {
+      "id": 38,
+      "name": "Vitamin B Complex",
+      "description": "Supports energy metabolism and nervous system health",
+      "price": 13.49,
+      "images": [
+        "public/assets/special/vitamin_b_complex-1.jpg",
+        "public/assets/special/vitamin_b_complex-2.jpg",
+        "public/assets/special/vitamin_b_complex-3.jpg"
+      ]
+    },
+    {
+      "id": 39,
+      "name": "CoQ10",
+      "description": "Antioxidant that supports heart health",
+      "price": 22.99,
+      "images": [
+        "public/assets/special/coq10-1.jpg",
+        "public/assets/special/coq10-2.jpg",
+        "public/assets/special/coq10-3.jpg"
+      ]
+    },
+    {
+      "id": 40,
+      "name": "Iron Supplement",
+      "description": "Helps in the formation of red blood cells",
+      "price": 9.99,
+      "images": [
+        "public/assets/special/iron-1.jpg",
+        "public/assets/special/iron-2.jpg",
+        "public/assets/special/iron-3.jpg"
+      ]
+    },
+    {
+      "id": 41,
+      "name": "Magnesium Tablets",
+      "description": "Supports muscle and nerve function",
+      "price": 12.49,
+      "images": [
+        "public/assets/special/magnesium-1.jpg",
+        "public/assets/special/magnesium-2.jpg",
+        "public/assets/special/magnesium-3.jpg"
+      ]
+    },
+    {
+      "id": 42,
+      "name": "Calcium Gummies",
+      "description": "Tasty gummies for bone health",
+      "price": 11.99,
+      "images": [
+        "public/assets/special/calcium_gummies-1.jpg",
+        "public/assets/special/calcium_gummies-2.jpg",
+        "public/assets/special/calcium_gummies-3.jpg"
+      ]
+    },
+    {
+      "id": 43,
+      "name": "Probiotic Gummies",
+      "description": "Supports digestive health with a delicious taste",
+      "price": 14.99,
+      "images": [
+        "public/assets/special/probiotic_gummies-1.jpg",
+        "public/assets/special/probiotic_gummies-2.jpg",
+        "public/assets/special/probiotic_gummies-3.jpg"
+      ]
+    },
+    {
+      "id": 44,
+      "name": "Turmeric Capsules",
+      "description": "Anti-inflammatory and antioxidant properties",
+      "price": 16.99,
+      "images": [
+        "public/assets/special/turmeric-1.jpg",
+        "public/assets/special/turmeric-2.jpg",
+        "public/assets/special/turmeric-3.jpg"
+      ]
+    },
+    {
+      "id": 45,
+      "name": "Ginkgo Biloba",
+      "description": "Enhances cognitive function and memory",
+      "price": 19.49,
+      "images": [
+        "public/assets/special/ginkgo-1.jpg",
+        "public/assets/special/ginkgo-2.jpg",
+        "public/assets/special/ginkgo-3.jpg"
+      ]
+    },
+    {
+      "id": 46,
+      "name": "Glucosamine Chondroitin",
+      "description": "Supports joint health and mobility",
+      "price": 24.99,
+      "images": [
+        "public/assets/special/glucosamine-1.jpg",
+        "public/assets/special/glucosamine-2.jpg",
+        "public/assets/special/glucosamine-3.jpg"
+      ]
+    },
+    {
+      "id": 47,
+      "name": "Prostate Health",
+      "description": "Supports prostate function and urinary health",
+      "price": 18.49,
+      "images": [
+        "public/assets/special/prostate-1.jpg",
+        "public/assets/special/prostate-2.jpg",
+        "public/assets/special/prostate-3.jpg"
+      ]
+    },
+    {
+      "id": 48,
+      "name": "Ashwagandha",
+      "description": "Adaptogen that helps reduce stress and anxiety",
+      "price": 21.99,
+      "images": [
+        "public/assets/special/ashwagandha-1.jpg",
+        "public/assets/special/ashwagandha-2.jpg",
+        "public/assets/special/ashwagandha-3.jpg"
+      ]
+    },
+    {
+      "id": 49,
+      "name": "Collagen Peptides",
+      "description": "Supports skin, hair, and nail health",
+      "price": 26.99,
+      "images": [
+        "public/assets/special/collagen-1.jpg",
+        "public/assets/special/collagen-2.jpg",
+        "public/assets/special/collagen-3.jpg"
+      ]
+    },
+    {
+      "id": 50,
+      "name": "Biotin",
+      "description": "Supports healthy hair, skin, and nails",
+      "price": 15.99,
+      "images": [
+        "public/assets/special/biotin-1.jpg",
+        "public/assets/special/biotin-2.jpg",
+        "public/assets/special/biotin-3.jpg"
+      ]
+    },
+    {
+      "id": 51,
+      "name": "Saw Palmetto",
+      "description": "Supports urinary tract function and prostate health",
+      "price": 14.99,
+      "images": [
+        "public/assets/special/saw_palmetto-1.jpg",
+        "public/assets/special/saw_palmetto-2.jpg",
+        "public/assets/special/saw_palmetto-3.jpg"
+      ]
+    },
+    {
+      "id": 52,
+      "name": "Vitamin E",
+      "description": "Antioxidant that supports skin health",
+      "price": 10.99,
+      "images": [
+        "public/assets/special/vitamin_e-1.jpg",
+        "public/assets/special/vitamin_e-2.jpg",
+        "public/assets/special/vitamin_e-3.jpg"
+      ]
+    },
+    {
+      "id": 53,
+      "name": "MCT Oil",
+      "description": "Provides quick energy and supports brain function",
+      "price": 19.99,
+      "images": [
+        "public/assets/special/mct_oil-1.jpg",
+        "public/assets/special/mct_oil-2.jpg",
+        "public/assets/special/mct_oil-3.jpg"
+      ]
+    },
+    {
+      "id": 54,
+      "name": "Resveratrol",
+      "description": "Antioxidant that supports cardiovascular health",
+      "price": 23.99,
+      "images": [
+        "public/assets/special/resveratrol-1.jpg",
+        "public/assets/special/resveratrol-2.jpg",
+        "public/assets/special/resveratrol-3.jpg"
       ]
     }
   ]

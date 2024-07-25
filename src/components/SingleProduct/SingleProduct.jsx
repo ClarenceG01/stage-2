@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import "./singleproduct.css";
-import { IoCartOutline } from "react-icons/io5";
+import { LiaShoppingCartSolid } from "react-icons/lia";
+import { IoArrowBack } from "react-icons/io5";
 import { useDispatch, useSelector } from "react-redux";
-import { addProductToCart } from "../../redux/productsSlice";
+import { addProductToCart, changeSeeCart } from "../../redux/productsSlice";
+import Cart from "../Cart/Cart";
 
 const SingleProduct = () => {
   const location = useLocation();
@@ -11,22 +13,21 @@ const SingleProduct = () => {
   const dispatch = useDispatch();
   const cart = useSelector((state) => state.products.cart);
   const [activeImage, setActiveImage] = useState(product.images[0]);
-
   return (
     <section id="single-product">
-      <div className="nav-top">
-        <img
-          src="/assets/arrow-left.png"
+      <article className="nav-top">
+        <IoArrowBack
           alt="back left"
+          className="back-icon"
           onClick={() => {
             window.history.back();
           }}
         />
-        <div className="cart-count">
-          <IoCartOutline className="cart-icon" />
+        <div className="cart-count" onClick={() => dispatch(changeSeeCart())}>
+          <LiaShoppingCartSolid className="cart-icon" />
           <span>{cart.length}</span>
         </div>
-      </div>
+      </article>
       <div className="product-gallery">
         <div>
           <img src={`/${activeImage}`} alt="Active product" />
@@ -68,6 +69,7 @@ const SingleProduct = () => {
           </button>
         </div>
       </div>
+      <Cart />
     </section>
   );
 };

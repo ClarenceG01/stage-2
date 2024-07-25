@@ -21,6 +21,7 @@ const Cart = () => {
   const totalPrice = cartItems.reduce((total, product) => {
     return total + product.price * product.quantity;
   }, 0);
+  console.log(cartItems);
   return (
     <div className={visible ? "cart-container" : "no-cart"}>
       <div className="top">
@@ -32,7 +33,7 @@ const Cart = () => {
           return (
             <div className="cart-product" key={product.id}>
               <div className="cart-img">
-                <img src={product.images[0]} alt="" />
+                <img src={`/${product.images[0]}`} alt="" />
               </div>
               <div className="product-info">
                 <div>

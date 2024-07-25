@@ -1,0 +1,67 @@
+#success {
+  background: url("assets/Confirmation.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#success div:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#success div:first-child h1 {
+  color: rgba(0, 0, 0, 0.75);
+  text-align: center;
+  font-family: Lora;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%; /* 50px */
+}
+#success div:first-child p {
+  width: 340px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.75);
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+#success button {
+  display: flex;
+  padding: 14px 24px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background-color: #1e1e1e;
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 125% */
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 200px;
+}
+#success button:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+}
+#success button:active {
+  transform: scale(0.95);
+  transition: transform 0.2s ease-in-out;
+  background-color: #fff;
+  color: #1e1e1e;
+  border: 1px solid #1e1e1e;
+}

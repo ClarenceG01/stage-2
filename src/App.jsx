@@ -5,6 +5,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Checkout from "./components/Checkout/Checkout";
 import SingleProduct from "./components/SingleProduct/SingleProduct";
+import Success from "./components/Success/Success";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/shop" element={<div>Shop</div>} />
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/product/:id" element={<SingleProduct />} />
+        <Route path="/success" element={<Success />} />
       </Routes>
     </BrowserRouter>
   );
