@@ -197,5 +197,10 @@
     width: 100%;
     height: fit-content;
     border-radius: 0;
+    padding-bottom: 250px;
+  }
+  .cart-product {
+    padding: 0px 1rem 6.531px 1rem;
+    border-bottom: 1px solid #e5e5e5;
   }
 }
