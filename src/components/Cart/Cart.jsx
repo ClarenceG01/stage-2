@@ -17,11 +17,9 @@ const Cart = () => {
   const dispatch = useDispatch();
   const visible = useSelector((state) => state.products.setCart);
   const cartItems = useSelector((state) => state.products.cart);
-  console.log(cartItems);
   const totalPrice = cartItems.reduce((total, product) => {
     return total + product.price * product.quantity;
   }, 0);
-  console.log(cartItems);
   return (
     <div className={visible ? "cart-container" : "no-cart"}>
       <div className="top">
