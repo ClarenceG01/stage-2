@@ -76,17 +76,7 @@ const Products = () => {
             );
           })}
       </div>
-      <div
-        className="pagination-controls"
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          width: "40%",
-          margin: "20px auto",
-          fontFamily: "Inter",
-        }}
-      >
+      <div className="pagination-controls">
         <button
           style={{
             padding: "10px",
